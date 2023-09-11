@@ -1,0 +1,90 @@
+<header class="header header-34 header-intro-clearance">
+    <div class="header-top mb-0">
+        <div [class]="containerClass">
+            <div class="header-left">
+                <a href="tel:#" class="d-flex align-items-center">
+                    <i class="icon-phone"></i>Call: +0123 456 789
+                </a>
+            </div>
+
+            <div class="header-right">
+
+                <ul class="top-menu">
+                    <li>
+                        <a href="javascript:;">Links</a>
+                        <ul>
+                            <li>
+                                <div class="header-dropdown">
+                                    <a href="javascript:;">USD</a>
+                                    <div class="header-menu">
+                                        <ul>
+                                            <li><a href="javascript:;">Eur</a></li>
+                                            <li><a href="javascript:;">Usd</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="header-dropdown">
+                                    <a href="javascript:;">English</a>
+                                    <div class="header-menu">
+                                        <ul>
+                                            <li><a href="javascript:;">English</a></li>
+                                            <li><a href="javascript:;">French</a></li>
+                                            <li><a href="javascript:;">Spanish</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="login"><a href="javascript:;" (click)="showLoginModal($event)">Sign in / Sign
+                                    up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-middle">
+        <div [class]="containerClass">
+            <div class="header-left">
+                <molla-mobile-button></molla-mobile-button>
+
+                <a routerLink="/" class="logo">
+                    <img src="assets/images/home/header-logo.png" alt="Molla Logo" width="97" height="24">
+                </a>
+            </div>
+
+            <div class="header-center">
+                <molla-header-search style="width: 100%;"></molla-header-search>
+            </div>
+
+            <div class="header-right">
+                <div class="header-dropdown-link d-flex align-items-center">
+                    <molla-compare-menu></molla-compare-menu>
+
+                    <molla-wishlist-menu></molla-wishlist-menu>
+
+                    <molla-cart-menu></molla-cart-menu>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sticky-wrapper" [style.height]="utilsService.isSticky? utilsService.stickyHeight + 'px' : '' ">
+        <div class="header-bottom sticky-header" [class.fixed]="utilsService.isSticky">
+            <div [ngClass]="containerClass">
+                <div class="header-left">
+                    <molla-category-menu style="align-self: flex-end;"></molla-category-menu>
+
+                    <molla-main-menu></molla-main-menu>
+                </div>
+                <div class="header-right">
+                    <i class="icon-medapps"></i>
+                    <p class="font-weight-bolder text-white">Clearance Up to<span class="text-primary"> 30% Off</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

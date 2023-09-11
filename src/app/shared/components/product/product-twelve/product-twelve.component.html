@@ -1,0 +1,55 @@
+<div class="product product-12">
+    <h5 class="product-title">
+        <a [routerLink]="['/product/default/'+ product.slug]">{{ product.name }}</a>
+    </h5>
+
+    <figure class="product-media">
+        <a [routerLink]="['/product/default/'+ product.slug]">
+            <molla-image [src]="SERVER_URL + product.sm_pictures[0].url" alt="Product" class="product-image">
+            </molla-image>
+            <molla-image [src]="SERVER_URL + product.sm_pictures[1].url" alt="Product" class="product-image-hover"
+                *ngIf="product.sm_pictures[1]"></molla-image>
+        </a>
+    </figure>
+
+    <div class="product-body">
+        <div class="price-ratings-container">
+            <div class="product-price" *ngIf="!product.stock || product.stock == 0 else elseBlock">
+                <span class="out-price">${{ product.price.toFixed(2) }}</span>
+            </div>
+
+            <ng-template #elseBlock>
+                <div class="product-price" *ngIf="minPrice == maxPrice else elseBlock">${{ minPrice.toFixed(2) }}</div>
+                <ng-template #elseBlock>
+                    <div class="product-price" *ngIf="product.variants.length == 0 else elseBlock">
+                        <span class="new-price">${{ minPrice.toFixed(2) }}</span>
+                        <span class="old-price">${{ maxPrice.toFixed(2) }}</span>
+                    </div>
+                    <ng-template #elseBlock>
+                        <div class="product-price">${{minPrice.toFixed(2)}}&ndash;${{maxPrice.toFixed(2)}}</div>
+                    </ng-template>
+                </ng-template>
+            </ng-template>
+
+            <div class="ratings-container">
+                <div class="ratings">
+                    <div class="ratings-val" [style.width]="product.ratings * 20 + '%'"></div>
+                    <span class="tooltip-text">{{ product.ratings.toFixed(2) }}</span>
+                </div>
+            </div>
+        </div>
+
+        <label class="product-label label-rounded"
+            *ngIf="product.sale_price">Save<span>{{ ( ( maxPrice - minPrice ) / maxPrice * 100 ).toFixed() }}%</span></label>
+
+        <div class="product-action" *ngIf="product.stock && product.stock !== 0">
+            <button class="btn btn-primary btn-rounded" (click)="addToCart($event)">
+                <span>BUY</span><i class="icon-shopping-cart"></i>
+            </button>
+            <a href="javascript:;" class="btn btn-product btn-compare" (click)="addToCompare($event)"></a>
+            <a href="javascript:;" class="btn btn-product btn-wishlist" [class.added-to-wishlist]="isInWishlist()"
+                (click)="addToWishlist($event)">
+            </a>
+        </div>
+    </div>
+</div>

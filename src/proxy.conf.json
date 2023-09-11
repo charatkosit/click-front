@@ -1,0 +1,26 @@
+{
+  "/apiauth/*": {
+    "target": "http://127.0.0.1:3100",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": "true"
+  },
+  "/apigoplus/*": {
+    "target": "http://192.168.20.17:8880",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": "true"
+  },
+  "/api/*": {
+    "target": "http://127.0.0.1:3000",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": "true"
+  }
+
+
+
+  
+}
+
+

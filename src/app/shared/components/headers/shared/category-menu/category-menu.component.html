@@ -1,0 +1,470 @@
+<div class="dropdown category-dropdown">
+    <a href="javascript:;" class="dropdown-toggle font-weight-bolder" (click)="toggleMenu()" title="Browse Categories">
+        Browse Categories
+    </a>
+
+    <div class="dropdown-menu">
+        <nav class="side-nav">
+            <ul class="menu-vertical sf-arrows" [class.sf-js.enabled]>
+                <li class="megamenu-container">
+                    <a class="sf-with-ul" [routerLink]="['/shop/sidebar/list']"
+                        [queryParams]="{category: 'electronics'}"><i class="icon-laptop"></i>Electronics</a>
+
+                    <div class="megamenu">
+                        <div class="row no-gutters">
+                            <div class="col-md-8">
+                                <div class="menu-col">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="menu-title">Laptops & Computers</div>
+                                            <ul>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Desktop Computers</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Monitors</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Laptops</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">iPad & Tablets</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Hard Drives &
+                                                        Storage</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Printers &
+                                                        Supplies</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Computer
+                                                        Accessories</a>
+                                                </li>
+                                            </ul>
+
+                                            <div class="menu-title">TV & Video</div>
+                                            <ul>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">TVs</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Home Audio
+                                                        Speakers</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Projectors</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Media Streaming
+                                                        Devices</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="menu-title">Cell Phones</div>
+                                            <ul>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Carrier Phones</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Unlocked Phones</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Phone & Cellphone
+                                                        Cases</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Cellphone Chargers
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                            <div class="menu-title">Digital Cameras</div>
+                                            <ul>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Digital SLR
+                                                        Cameras</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Sports & Action
+                                                        Cameras</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Camcorders</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Camera Lenses</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Photo Printer</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Digital Memory
+                                                        Cards</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'electronics'}">Camera Bags, Backpacks
+                                                        &
+                                                        Cases</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="banner">
+                                    <a routerLink="/shop/sidebar/list" [queryParams]="{category: 'electronics'}"
+                                        class="banner banner-menu">
+                                        <img src="assets/images/home/banner/1-1.jpg" alt="Banner" width="280"
+                                            height="440">
+                                    </a>
+                                    <div class="banner-content">
+                                        <h5 class="banner-subtitle font-weight-normal">Deals of
+                                            the Week</h5>
+                                        <h3 class="banner-title text-dark font-weight-bold">Save
+                                            On Smart<br />Phone<br />and Accessories</h3>
+                                        <div class="banner-price font-weight-bold">20% off</div>
+                                        <a routerLink="/shop/sidebar/list" [queryParams]="{category: 'electronics'}"
+                                            class="btn btn-primary btn-rounded">SHOP NOW<i
+                                                class="icon-long-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="megamenu-container">
+                    <a class="sf-with-ul" [routerLink]="['/shop/sidebar/list']"
+                        [queryParams]="{category: 'furniture'}"><i class="icon-couch"></i>Furniture</a>
+
+                    <div class="megamenu">
+                        <div class="row no-gutters">
+                            <div class="col-md-8">
+                                <div class="menu-col">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="menu-title">Bedroom</div>
+                                            <ul>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Beds, Frames & Bases</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Dressers</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Nightstands</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Kids' Beds &
+                                                        Headboards</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Armoires</a></li>
+                                            </ul>
+
+                                            <div class="menu-title">Living Room</div>
+                                            <ul>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Coffee Tables</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Chairs</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Tables</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Futons & Sofa Beds</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Cabinets & Chests</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="menu-title">Office</div>
+                                            <ul>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Office Chairs</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Desks</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Bookcases</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">File Cabinets</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Breakroom Tables</a>
+                                                </li>
+                                            </ul>
+
+                                            <div class="menu-title">Kitchen & Dining</div>
+                                            <ul>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Dining Sets</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Kitchen Storage
+                                                        Cabinets</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Bakers Racks</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Dining Chairs</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Dining Room Tables</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'furniture'}">Bar Stools</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="banner banner-2">
+                                    <a routerLink="/shop/sidebar/list" [queryParams]="{category: 'furniture'}"
+                                        class="banner banner-menu h-100">
+                                        <img src="assets/images/home/banner/1-2.jpg" alt="Banner" width="280"
+                                            height="440" style="object-fit: fill;">
+                                    </a>
+                                    <div class="banner-content">
+                                        <h5 class="banner-subtitle font-weight-normal">Hottest
+                                            Deals</h5>
+                                        <h3 class="banner-title font-weight-bold text-white">
+                                            Save Up To 30%<br />On Clearance</h3>
+                                        <a routerLink="/shop/sidebar/list" [queryParams]="{category: 'furniture'}"
+                                            class="btn btn-primary btn-rounded">SHOP NOW<i
+                                                class="icon-long-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="megamenu-container">
+                    <a class="sf-with-ul" [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'cooking'}"><i
+                            class="icon-concierge-bell"></i>Cooking</a>
+
+                    <div class="megamenu">
+                        <div class="menu-col">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="menu-title">Cookware</div>
+                                    <ul>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Cookware Sets</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Pans, Griddles & Woks</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Pots</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Skillets & Grill Pans</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Kettles</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Soup & Stockpots</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="menu-title">Dinnerware & Tabletop</div>
+                                    <ul>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Plates</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Cups & Mugs</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Trays & Platters</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Coffee & Tea Serving</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Salt & Pepper Shaker</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="menu-title">Cooking Appliances</div>
+                                    <ul>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Microwaves</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Coffee Makers</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Mixers & Attachments</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Slow Cookers</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Air Fryers</a></li>
+                                        <li><a [routerLink]="['/shop/sidebar/list']"
+                                                [queryParams]="{category: 'cooking'}">Toasters & Ovens</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row menu-banners">
+                                <div class="col-md-4">
+                                    <div class="banner">
+                                        <a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'cooking'}">
+                                            <molla-image src="assets/images/home/menu/1.jpg" alt="image" width="251"
+                                                height="141"></molla-image>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="banner">
+                                        <a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'cooking'}">
+                                            <molla-image src="assets/images/home/menu/2.jpg" alt="image" width="251"
+                                                height="141"></molla-image>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="banner">
+                                        <a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'cooking'}">
+                                            <molla-image src="assets/images/home/menu/3.jpg" alt="image" width="251"
+                                                height="141"></molla-image>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="megamenu-container">
+                    <a class="sf-with-ul" [routerLink]="['/shop/sidebar/list']"
+                        [queryParams]="{category: 'clothing'}"><i class="icon-tshirt"></i>Clothing</a>
+
+                    <div class="megamenu">
+                        <div class="row no-gutters">
+                            <div class="col-md-8">
+                                <div class="menu-col">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="menu-title">Women</div>
+                                            <ul>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}"><strong>New
+                                                            Arrivals</strong></a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}"><strong>Best
+                                                            Sellers</strong></a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}"><strong>Trending</strong></a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}">Clothing</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}">Shoes</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}">Bags</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}">Accessories</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}">Jewlery & Watches</a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}"><strong>Sale</strong></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="menu-title">Men</div>
+                                            <ul>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}"><strong>New
+                                                            Arrivals</strong></a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}"><strong>Best
+                                                            Sellers</strong></a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}"><strong>Trending</strong></a>
+                                                </li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}">Clothing</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}">Shoes</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}">Bags</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}">Accessories</a></li>
+                                                <li><a [routerLink]="['/shop/sidebar/list']"
+                                                        [queryParams]="{category: 'clothing'}">Jewlery & Watches</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="banner banner-3">
+                                    <a routerLink="/shop/sidebar/list" [queryParams]="{category: 'clothing'}"
+                                        class="banner banner-menu">
+                                        <img src="assets/images/home/banner/1-3.jpg" alt="Banner" width="280"
+                                            height="347" />
+                                    </a>
+                                    <div class="banner-content text-right">
+                                        <h5 class="banner-subtitle font-weight-normal text-white">
+                                            Trending Now</h5>
+                                        <h3 class="banner-title font-weight-bold text-white">
+                                            New<br />Spring<br />Now</h3>
+                                        <a routerLink="/shop/sidebar/list" [queryParams]="{category: 'clothing'}"
+                                            class="btn btn-primary btn-rounded">SHOP NOW<i
+                                                class="icon-long-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-col menu-brands">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'clothing'}">
+                                        <img src="assets/images/brands/1.png" alt="Brand Name">
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'clothing'}">
+                                        <img src="assets/images/brands/2.png" alt="Brand Name">
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'clothing'}">
+                                        <img src="assets/images/brands/3.png" alt="Brand Name">
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'clothing'}">
+                                        <img src="assets/images/brands/4.png" alt="Brand Name">
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'clothing'}">
+                                        <img src="assets/images/brands/5.png" alt="Brand Name">
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'clothing'}">
+                                        <img src="assets/images/brands/6.png" alt="Brand Name">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'home-appliances'}"
+                        class="text-dark"><i class="icon-blender"></i>Home Appliances</a></li>
+                <li><a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'healthy-and-beauty'}"
+                        class="text-dark"><i class="icon-heartbeat"></i>Healthy & Beauty</a></li>
+                <li><a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'shoes'}" class="text-dark"><i
+                            class="icon-shoe-prints"></i>Shoes & Boots</a></li>
+                <li><a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'travel-and-outdoor'}"
+                        class="text-dark"><i class="icon-map-signs"></i>Travel & Outdoor</a></li>
+                <li><a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'electronics'}"
+                        class="text-dark"><i class="icon-mobile-alt"></i>Smart Phones</a></li>
+                <li><a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'electronics'}"
+                        class="text-dark"><i class="icon-tv"></i>TV & Audio</a></li>
+                <li><a [routerLink]="['/shop/sidebar/list']" [queryParams]="{category: 'gift'}" class="text-dark"><i
+                            class="icon-gift"></i>Gift Ideas</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>

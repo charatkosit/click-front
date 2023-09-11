@@ -1,0 +1,18 @@
+<section class="product-section car-parts">
+    <div class="container">
+        <div class="heading heading-center" contentAnim aniName="blurIn">
+            <h2 class="title font-weight-bolder">Special Offers On Car Parts</h2>
+            <p class="title-desc font-weight-normal">Latest Offers</p>
+        </div>
+
+        <owl-carousel carouselClasses="owl-theme" [options]="productSlider" *ngIf="!loaded else loadedBlock">
+            <div class="skel-pro" *ngFor="let i of [1,2,3,4,5,6]"></div>
+        </owl-carousel>
+        <ng-template #loadedBlock>
+            <owl-carousel carouselClasses="owl-theme" [options]="productSlider">
+                <molla-product-twelve [product]="product" *ngFor="let product of products">
+                </molla-product-twelve>
+            </owl-carousel>
+        </ng-template>
+    </div>
+</section>

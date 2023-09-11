@@ -1,0 +1,18 @@
+<section class="blog-section">
+    <div class="container">
+        <div class="heading heading-center" contentAnim aniName="blurIn">
+            <h2 class="title font-weight-bolder">Latest Blog Posts</h2>
+            <p class="title-desc font-weight-normal">Read Today's News.</p>
+        </div>
+
+        <owl-carousel carouselClasses="owl-theme" [options]="blogSlider" *ngIf="!loaded else loadedBlock">
+            <div class="skel-pro" *ngFor="let i of [1,2,3,4,5]"></div>
+        </owl-carousel>
+        <ng-template #loadedBlock>
+            <owl-carousel carouselClasses="owl-theme" [options]="blogSlider">
+                <molla-post-four [post]="post" *ngFor="let post of posts">
+                </molla-post-four>
+            </owl-carousel>
+        </ng-template>
+    </div>
+</section>
